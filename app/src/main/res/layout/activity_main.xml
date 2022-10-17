@@ -7,6 +7,19 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/titleNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
         android:id="@+id/txtNama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,6 +30,19 @@
         app:layout_constraintStart_toEndOf="@+id/titleNama"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/titleNIM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIM"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleNama"
+        app:layout_constraintVertical_bias="0.023" />
 
     <TextView
         android:id="@+id/txtNIM"
@@ -75,29 +101,45 @@
         app:layout_constraintTop_toBottomOf="@+id/txtHooby" />
 
     <TextView
-        android:id="@+id/titleNama"
+        android:id="@+id/txtQuote"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nama"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="32dp"
+        android:text="&quot;Katanya sukses itu berasal dari mimpi, maka tidurlah dan bermimpi Anda adalah Elon Musk&quot;"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintTop_toBottomOf="@+id/txtDesc"
+        tools:textAlignment="center" />
 
-    <TextView
-        android:id="@+id/titleNIM"
+    <Button
+        android:id="@+id/btnAddr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NIM"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="24dp"
+        android:text="Alamat"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleNama"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintTop_toBottomOf="@+id/txtQuote" />
+
+    <Button
+        android:id="@+id/btnTelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telepon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddr" />
+
+    <Button
+        android:id="@+id/btnEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTelp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
